@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.modal-hide{
+  display: none;
+}
+
+
+.desktopslide {
+  display: block;
+}
+
+.mobileslide {
+  display: none;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0 !important;
+  width: 36px !important;
+  background-color: transparent !important;
+  border: 3px solid black !important;
+}
+
+.custom-pagination {
+  text-align: end;
+}
+
+.swiper-button-next {
+  color: black !important;
+}
+.swiper-button-prev {
+  color: black !important;
+}
+.z-index{
+  z-index: 1;
+}
+
+.animate-hide{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s linear 0.33s, opacity 0.33s linear;
+}
+
+@media (max-width: 767px) {
+  .desktopslide {
+    display: none;
+  }
+  .mobileslide {
+    display: block;
+  }
+}
